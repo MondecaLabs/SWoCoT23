@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +20,7 @@
     <!-- Style CSS -->
     <link href="css/style.css" rel="stylesheet">
     <!-- JSON-LD metadata -->
-	<script type='application/ld+json'> 
+    <script type='application/ld+json'>
 					{
 					  "@context": "http://www.schema.org",
 					  "@type": "EducationEvent",
@@ -80,532 +81,359 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body id="page-top" data-spy="scroll" data-target=".navbar">
-<div id="main-wrapper">
-    <!-- Page Preloader -->
-    <div id="preloader">
-        <div id="status">
-            <div class="status-mes"></div>
+    <div id="main-wrapper">
+        <!-- Page Preloader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="status-mes"></div>
+            </div>
         </div>
-    </div>
 
-    <header class="header">
-        <!-- Navigation -->
-        <nav class="navbar main-menu" role="navigation">
+        <header class="header">
+            <!-- Navigation -->
+            <nav class="navbar main-menu" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-main-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand page-scroll" href="#page-top"><img src="img/img-logo_.png" alt=""></a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                        <ul class="nav navbar-nav">
+                            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                            <li class="hidden"><a href="#page-top"></a></li>
+                            <li><a class="page-scroll" href="#section-intro">About</a></li>
+                            <li><a class="page-scroll" href="#section-cfp">Call for Papers</a></li>
+                            <li><a class="page-scroll" href="#section-submission">Submission</a></li>
+                            <li><a class="page-scroll" href="#section-speaker">Organization</a></li>
+                            <li><a class="page-scroll" href="#section-pc">Program Committee</a></li>
+                            <!-- <li><a class="page-scroll" href="#section-ajenda">Keynotes</a></li> -->
+                            <!-- <li><a class="page-scroll" href="#section-pricing">Buy Ticket</a></li>-->
+                            <!-- <li><a class="page-scroll" href="#section-partner">Partners</a></li> -->
+                            <!--<li><a class="page-scroll" href="#section-venue">Venue</a></li> -->
+                            <!-- <li><a class="page-scroll" href="#section-tutorial">Tutorial</a></li> -->
+                            <!-- <li><a class="page-scroll" href="#section-flyer">Flyer</a></li> -->
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container -->
+            </nav>
+
+            <!-- .nav -->
+
+        </header>
+
+        <div class="jumbotron text-center">
+            <div class="content">
+                <div class="event-date">MAY 28 or MAY 29, 2023, Hersonissos, Crete</div>
+                <h1>First International Workshop on Semantic Web on Constrained Things</h1>
+
+                <p class="lead">Held at the <a href="https://2023.eswc-conferences.org/">ESWC 2023</a></p>
+                <button type="button" class="btn btn-default btn-lg"><a href="#section-cfp">CALL FOR PAPERS</a></button>
+                <button type="button" class="btn btn-default btn-lg"><a
+                        href="#section-submission">SUBMISSION</a></button>
+                <!--<button type="button" class="btn btn-default btn-lg"><a  href="#section-venue">VENUE</a></button>-->
+            </div>
+        </div>
+        <!-- .Jumbotron-->
+
+
+        <section id="section-intro" class="section-wrapper about-event">
             <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top"><img src="img/img-logo_.png" alt=""></a>
-                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2>OVERVIEW</h2>
+                        <p class="lead">
+                            In recent years, the combination of Internet of Things (IoT), Semantics and Web of Things
+                            (SWoT) has been more and more popular to collect sensing data according to the semantic web
+                            stack and build smart services and applications.
+                            One momentum is the release of a W3C recommendation for WoT architecture along with a formal
+                            specification of Thing Descriptions. The Web of Things (WoT) allows to describe device
+                            semantics, bridging the gap between device and service descriptions.
+                            Developers can use WoT standards and tools to collect sensing data and control devices for
+                            the applications in agriculture, energy, enterprise, finance, healthcare, industry, etc.
+                        </p>
+                        <p class="lead">
+                            At the same time, decentralized infrastructures able to capture and transform data at the
+                            edge have gained attraction over centralized ones, due to both the constant attempts to
+                            reduce industrial costs and the real necessity to reduce global carbon emissions.
+                            Decentralized infrastructures hence represent a step towards the so-called Green Web,
+                            especially as they are usually built on small and low-energy consuming devices.
+                            However, fulfilling the SWoT promises using such infrastructures poses new challenges as
+                            these small devices are constrained in terms of computing capabilities and memory, and since
+                            wireless network communications are also energy-consuming and can hinder battery life of
+                            autonomous devices.
+                            Deploying SWoT standards on such devices require to control and monitor the consumption of
+                            these resources, whereas semantic technologies are known to be verbose and computation
+                            intensive.
+                        </p>
+                        <p class="lead">
+                            This first international workshop aims at bridging together research and industry
+                            communities working on the different aspects of embedding data semantics and standards-based
+                            solutions into edge and/or constrained Internet and Web of Things setups,
+                            as well as reducing the carbon footprint of semantic technologies.
+                            <br>
+                            The workshop will include a keynote presentation, different types of submission (research,
+                            in-use, experience, position, tools and demos), and break-out discussions.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>News</h2>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                    <ul class="nav navbar-nav">
-                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                        <li class="hidden"><a href="#page-top"></a></li>
-                        <li><a class="page-scroll" href="#section-intro">About</a></li>
-						<li><a class="page-scroll" href="#section-cfp">Call for Papers</a></li>
-						<li><a class="page-scroll" href="#section-submission">Submission</a></li>
-                        <li><a class="page-scroll" href="#section-speaker">Organization</a></li>
-						<li><a class="page-scroll" href="#section-pc">Program Committee</a></li>
-                       <!-- <li><a class="page-scroll" href="#section-ajenda">Keynotes</a></li> -->
-                       <!-- <li><a class="page-scroll" href="#section-pricing">Buy Ticket</a></li>-->
-                       <!-- <li><a class="page-scroll" href="#section-partner">Partners</a></li> -->
-                       <!--<li><a class="page-scroll" href="#section-venue">Venue</a></li> -->
-			           <!-- <li><a class="page-scroll" href="#section-tutorial">Tutorial</a></li> -->
-			           <!-- <li><a class="page-scroll" href="#section-flyer">Flyer</a></li> -->
-                    </ul>
+                        <!--	<strong>Paper submission deadline (extension): </strong> April 7, 2019 (23:59 Hawaii Time) </br>
+					<strong>Paper notification (extension):</strong> April 30, 2019 </br> -->
+
+
+
+                        <strong>16-12-2022:</strong> Workshop accepted by ESWC chairs</br>
+                        <strong>19-12-2022:</strong> First version of the website online </br>
+                        <!--<strong>03-10-2018:</strong> KOGPIT accepted by KGWC 2019 </br> -->
+                    </div>
                 </div>
-                <!-- /.navbar-collapse -->
+            </div>
+        </section>
+        <!-- .about-event -->
+
+        <section id="section-cfp" class="section-wrapper ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>CALL FOR PAPERS</h2>
+                        <p class="lead">
+                            The purpose of the workshop is to provide a venue for scientific presentations,
+                            systematic analysis and rigorous evaluation of semantic WoT architectures, ontologies and
+                            tools,
+                            as well as practical and applied experiences and lessons-learned applied to constrained
+                            devices both from academia and industry.
+                            The workshop can lead to a contribution to the W3C community group on WoT.
+                        </p>
+
+                        <p class="lead"> Topics of interest include, but are not limited to:</p>
+                        <ol>
+                            <li>Automatization of knowledge graph construction for embedded systems</li>
+                            <li>Libraries and tools for creating knowledge graphs at the edge</li>
+                            <li>Ontologies and models adjustments for solving data and service heterogeneity in
+                                constrained networks</li>
+                            <li>Extensions of current State-of-the Art ontologies (M2M, SSN/SOSA, SAREF, etc) for
+                                sensing, converting raw data for embedded systems</li>
+                            <li>Ontology / vocabulary efficient integration and communication in embedded systems</li>
+                            <li>Smart brokers to exchange messages between edge and gateways</li>
+                            <li>Binary RDF formats to efficiently exchange datasets among smart devices</li>
+                            <li>Low coding approaches applied to constrained devices</li>
+                            <li>Architectural considerations for constrained devices</li>
+                            <li>Distributed querying and reasoning in edge computing</li>
+                            <li>Stream processing / reasoning at the edge</li>
+                            <li>Experimentation / evaluation of local resource consumption (memory, processing, etc.) of
+                                semantic technologies in constrained devices</li>
+                            <li>Experimentation / evaluation of global efficiency (network, energy consumption, carbon
+                                footprint, etc.) of semantic technologies in edge computing</li>
+                            <li>Lessons learned / best practices for implementing SWoT applications for embedded systems
+                            </li>
+                            <li>Frugal IoT application use cases in various domains: healthcare, smart agriculture,
+                                smart,
+                                transportation, robotics, industry 4.0, etc.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- .cfp section -->
+
+        <!-- submission section -->
+
+        <section id="section-submission" class="section-wrapper about-event">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2>SUBMISSION GUIDELINES</h2>
+                        <p class="lead">
+                            The submissions must be written in English using the Springer style (LNCS/CCIS one-column
+                            page format) and submitted non-anonymously in PDF via EasyChair.
+                            We invite the submission of original research results and proposed research directions
+                            related to the focus areas of the workshop, in one of the three categories given below:
+                        <ul>
+                            <li>Full papers (up to 15 pages)</li>
+                            <li>Short papers (6-8 pages)</li>
+                            <li>Demos (up to 4 pages)</li>
+                        </ul>
+                        Please note that HTML+RDFa contributions are also welcome as long as the layout complies with
+                        the LNCS style.
+                        </p>
+                        <p class="lead">
+                            All proposed papers must be submitted using the <a
+                                href="https://easychair.org/conferences/?conf=swocot2023">easychair conference
+                                management system</a>.
+                            All submitted papers will be subject to peer-review process.
+                            At least one co-author of each accepted paper is required to register to ESWC and present
+                            the paper.
+                        </p>
+
+                        <h3>Proceedings</h3>
+
+                        <p>Accepted full and short papers will be published in the workshop proceedings.
+                            The best papers from each workshop may be included in the supplementary proceedings of ESWC
+                            2023, which will appear in the Springer LNCS series.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h2>IMPORTANT DATES</h2>
+
+                        <strong>Paper submission deadline: </strong> 9 March 2023 (Anywhere on Earth) </br>
+                        <strong>Paper notification: </strong> 13 April 2023 (Anywhere on Earth)</br>
+                        <strong>Camera-ready Paper Due:</strong> 23 April 2023 (Anywhere on Earth) </br>
+                        <strong>Workshop Day:</strong> 28 or 29 May, 2023 </br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Organization section -->
+        <section id="section-speaker" class="section-wrapper team gray-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h1>ORGANIZATION</h1>
+                        </div>
+                        <div class="section-title">
+                            <h2>ORGANIZING COMMITTEE</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <figure class="thumbnail">
+                            <a href="https://atemezing.org "><img src="img/img-ghislain.jpeg" class="img-responsive"
+                                    alt="Image"></a>
+                            <figcaption class="caption text-center">
+                                <h3>Dr. Ghislain Atemezing
+                                    <small>Mondeca, Paris, France</small>
+                                </h3>
+                                <ul class="social-links">
+
+                                    <li><a href="https://twitter.com/gatemezing"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="http://fr.linkedin.com/in/gatemezing"><i
+                                                class="fa fa-linkedin"></i></a></li>
+
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!-- /.col-sm-6 -->
+
+                    <div class="col-sm-6 col-md-3">
+                        <figure class="thumbnail">
+                            <a href="https://liris.cnrs.fr/lionel.medini/"><img src="img/medini.jpeg"
+                                    class="img-responsive" alt="Image"></a>
+                            <figcaption class="caption text-center">
+                                <h3>Dr Lionel Medini
+                                    <small>Liris Lab / Université Lyon 1, France</small>
+                                </h3>
+                                <ul class="social-links">
+
+                                    <li><a href="https://twitter.com/lmedini"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!-- /.col-sm-6 -->
+
+                    <div class="col-sm-6 col-md-3">
+                        <figure class="thumbnail">
+                            <a href="https://perso.liris.cnrs.fr/flaforest/"><img src="img/flaforest.png"
+                                    class="img-responsive" alt="Image"></a>
+                            <figcaption class="caption text-center">
+                                <h3>Pr. Frédérique Laforest
+                                    <small>INSA Lyon, France</small>
+                                </h3>
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!-- /.col-sm-6 -->
+                </div>
+                <!-- .row -->
             </div>
             <!-- /.container -->
-        </nav>
+        </section>
+        <!-- .team -->
 
-        <!-- .nav -->
+        <!-- section program committee -->
 
-    </header>
-
-    <div class="jumbotron text-center">
-        <div class="content">
-            <div class="event-date">MAY 28 or MAY 29, 2023, Hersonissos, Crete</div>
-            <h1>First International Workshop on Semantic Web on Constrained Things</h1>
-            
-            <p class="lead">Held at the <a href="https://2023.eswc-conferences.org/">ESWC 2023</a></p>
-            <button type="button" class="btn btn-default btn-lg"><a  href="#section-cfp">CALL FOR PAPERS</a></button>
-			<button type="button" class="btn btn-default btn-lg" ><a  href="#section-submission">SUBMISSION</a></button>
-			<!--<button type="button" class="btn btn-default btn-lg"><a  href="#section-venue">VENUE</a></button>-->
-        </div>
-    </div>
-    <!-- .Jumbotron-->
-
-
-    <section id="section-intro" class="section-wrapper about-event">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-			<h2> Overview </h2>
-                    <p class="lead">
-                        In recent years, the combination of Internet of Things (IoT), Semantics and Web of Things (SWoT) has been more and more popular to collect sensing data according to the semantic web stack and build smart services and applications. 
-                        One momentum is the release of a W3C recommendation for WoT architecture along with a formal specification of Thing Descriptions. The Web of Things (WoT) allows to describe device semantics, bridging the gap between the different domain and service descriptions. 
-                        Developers can use WoT standards and tools to collect sensing data and control devices for the applications in agriculture, energy, enterprise, finance, healthcare, industry, etc. 
-			<br>
-                        At the same time, decentralized infrastructures able to capture and transform data at the edge have gained attraction over centralized ones, due to both the constant attempts to reduce industrial costs and the real necessity to reduce the global carbon emission.
-			Decentralized infrastructures hence represent a step towards the so-called Green Web, especially as they are usually built on small and low-energy consuming devices.
-			However, fulfilling the SWoT promises using such infrastructures poses new challenges as these small devices are constrained in terms of computing capabilities and memory.
-			Moreover for autonomous devices, wireless network communications are also energy-consuming and can hinder their battery life.
-			Deploying SWoT standards on such devices require to control and monitor the consumption of these resources, whereas semantic technologies are known to be verbose and computation intensive.
-                    </p>
-                    <p class="lead">
-                        This first international workshop aims at bridging together research and industry communities working on the
-                        different aspects of embedding data semantics and standards-based solutions into edge and/or constrained Internet and Web of Things setups,
-			as well as reducing the carbon footprint of semantic technologies.
-			<br>
-			The workshop will include a keynote presentation, different types of submission (research, in-use, experience, position, tools and demos), and break-out discussions.
-                    </p>
-                </div>
-                <div class="col-md-4">
-				  <h2>News</h2>
-				   
-				<!--	<strong>Paper submission deadline (extension): </strong> April 7, 2019 (23:59 Hawaii Time) </br>
-					<strong>Paper notification (extension):</strong> April 30, 2019 </br> -->
-                   
-					
-					
-					<strong>16-12-2022:</strong> Workshop accepted by ESWC chairs</br>
-	                <strong>19-12-2022:</strong> First version of the website online </br>
-	                <!--<strong>03-10-2018:</strong> KOGPIT accepted by KGWC 2019 </br> -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- .about-event -->
-
-	<section id="section-cfp" class="section-wrapper ">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-			<h2> CALL FOR PAPERS</h2>
-               <!--     <p class="lead">
-			    <strong>Pas sûr que ça vaille le coup de répéter tout ça</strong>
-                        In recent years, the combination of Internet of Things (IoT), Semantics and Web of Things (SWoT) has been more and more popular to collect sensing data according to the semantic web stack and build smart services and applications. 
-                        One momentum is the release of a W3C recommendation for WoT architecture along with a formal specification of Thing Descriptions. The Web of Things (WoT) allows to describe device semantics, bridging the gap between the different domain and service descriptions. 
-                        Developers can use WoT standards and tools to collect sensing data and control devices for the applications in agriculture, energy, enterprise, finance, healthcare, industry, etc. 
-                        At the same time, decentralized infrastructures able to capture and transform data at the edge have gained attraction over centralized ones, due to both the constant attempts to reduce industrial costs and the real necessity to reduce the global carbon emission.
-			Decentralized infrastructures represent a step towards the so-called Green Web, especially as they are usually built on small and low-energy consuming devices.
-			However, fulfilling the SWoT promises using such infrastructures poses new challenges as these small devices are constrained in terms of computing capabilities and memory.
-			Moreover for autonomous devices, wireless network communications are also energy-consuming and can hinder their battery life.
-			Deploying SWoT standards on such devices require to control and monitor the consumption of these resources, whereas semantic technologies are known to be verbose and computation intensive.
-                    </p> -->
-                    <p class="lead">
-                       The purpose of the workshop is to provide a venue for scientific presentations, systematic analysis and rigorous evaluation of semantic WoT architectures, ontologies and tools, as well as practical and applied experiences and lessons-learned applied to constrained devices both from academia and industry. The workshop can lead to a contribution to the W3C community group on WoT. 
-                    </p>
-					<p class="lead"> Topics of interest include, but not limited to: </p>
-					<ol> 
-					<li>Ontologies and models adjustments for solving data and service heterogeneity in constrained networks</li>
-					<li>Ontology / vocabulary efficient integration and communication among embedded systems </li>
-					<li> Extensions of current State-of-the Art ontologies (M2M, SSN/SOSA, SAREF, etc) for sensing, converting raw data for embedded systems
-                    </li>
-					<li>Knowledge Graph applications, and use cases</li>
-		
-					<li> Libraries for creating knowledge graphs at the edge</li>
-					<li> Distributed querying and reasoning in edge computing</li>
-					<li> Smart brokers to exchange messages between edge and gateways</li>
-					<li>Binary RDF formats to efficiently exchange datasets among smart devices </li>
-                    <li>Low coding approaches applied to constrained devices</li>
-                    <li>Architectural considerations for constrained devices</li>
-                    <li>Experimentations / Efficient evaluation of using semantic technologies in constrained devices (memory storage, processing, carbon footprint, network, etc)</li>
-                    <li>Automatization of knowledge graph construction methods for embedded systems</li>
-                    <li>Lessons learned/ Best practices for implementing SWoT applications for embedded systems</li>
-					<li> IoT application use cases in various domains: healthcare, smart agriculture, smart, transportation,
-					robotics, industry 4.0, etc.</li>
-
-					
-						 
-					</ol>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    <!-- .cfp section -->
-	
-	<!-- submission section --> 
-   
-   <section id="section-submission" class="section-wrapper about-event">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-				    <h2> SUBMISSION GUIDELINES</h2>
-                    <p class="lead">
-                        The submissions must be written in English using the Springer style (LNCS/CCIS one-column page format) and submitted non-anonymously in PDF via EasyChair.
-                        We invite the submission of original research results and proposed research directions related to the focus areas of the workshop, in one of the three categories given below:
-                         <ul>
-                             <li>Full papers (up to 15 pages)</li>
-                             <li>Short papers (6-8 pages)</li>
-                             <li>Demos (up to 4 pages)</li>
-                         </ul>   
-                    Please note that HTML+RDFa contributions are also welcome as long as the layout complies with the LNCS style. 
-                    </p>
-                    <p class="lead">
-                       All proposed papers must be submitted using the <a href="https://easychair.org/conferences/?conf=swocot2023">easychair conference management system</a>. 
-                       All submitted papers will be subject to peer-review process. 
-                       At least one co-author of each accepted paper is required to register to ESWC and present the paper.
-                    </p>
-                    
-                
-                    <h3>Proceedings</h3>
-                    
-                   <p>Accepted full and short papers will be published in the workshop proceedings. 
-                    The best papers from each workshop may be included in the supplementary proceedings of ESWC 2023, which will appear in the Springer LNCS series. 
-                   </p> 
-
-
-					
-                </div>
-                <div class="col-md-4">
-				  <h2>Important Dates</h2>
-            
-					<strong>Paper submission deadline: </strong> 9 March 2023 (Anywhere on Earth) </br>
-					<strong>Paper notification: </strong> 13 April 2023 (Anywhere on Earth)</br>
-					<strong>Camera-ready Paper Due:</strong> 23 April 2023 (Anywhere on Earth) </br>
-					<strong>Workshop Day:</strong> 28 or 29 May, 2023 </br>
-                </div> 
-            </div>
-        </div>
-    </section>
-	
-	<!-- Organization section -->
-    <section id="section-speaker" class="section-wrapper team gray-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title">
-                        <h1>ORGANIZATION</h1>
-                    </div>
-					<div class="section-title">
-                        <h2>Organizing Committee</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-md-3">
-                    <figure class="thumbnail">
-                        <a href="https://atemezing.org "><img src="img/img-ghislain.jpeg" class="img-responsive" alt="Image"></a>
-                        <figcaption class="caption text-center">
-                            <h3>Dr. Ghislain Atemezing
-                                <small>Mondeca, Paris, France</small>
-                            </h3>
-                            <ul class="social-links">
-                                
-                                <li><a href="https://twitter.com/gatemezing"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="http://fr.linkedin.com/in/gatemezing"><i class="fa fa-linkedin"></i></a></li>
-                                
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </div>
-                <!-- /.col-sm-6 -->
-
-                <div class="col-sm-6 col-md-3">
-                    <figure class="thumbnail">
-                        <a href="https://liris.cnrs.fr/lionel.medini/"><img src="img/medini.jpeg" class="img-responsive" alt="Image"></a>
-                        <figcaption class="caption text-center">
-                            <h3>Dr Lionel Medini
-                                <small>Liris Lab / Université Lyon 1, France</small>
-                            </h3>
-                            <ul class="social-links">
-                                
-                                <li><a href="https://twitter.com/lmedini"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                               
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </div>
-                <!-- /.col-sm-6 -->
-
-                <div class="col-sm-6 col-md-3">
-                    <figure class="thumbnail">
-                        <a href="https://perso.liris.cnrs.fr/flaforest/"><img src="img/flaforest.png" class="img-responsive" alt="Image"></a>
-                        <figcaption class="caption text-center">
-                            <h3>Pr. Frédérique Laforest
-                                <small>INSA Lyon, France</small>
-                            </h3>
-                            <ul class="social-links">
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </div>
-                <!-- /.col-sm-6 -->
-
-                
-                <!-- /.col-sm-6 -->
-
-            </div>
-            <!-- .row -->
-            
-        </div>
-        <!-- /.container -->
-    </section>
-    <!-- .team -->
-   
-    <!-- section program committee -->
-	
-	<section id="section-pc" class="section-wrapper about-event">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-				<h2> PROGRAM COMMITTEE (to be confirmed)</h2>
-                    <p class="lead">
-                        Following is the list of program committee members in no particular order : 
-                    </p>
-                    <ul>
-					<li> Maxime Lefrançois (Mines Saint-Etienne, France) </li>
-					<li> Catherine Roussey (MISTEA Montpellier, France)</li>
-					<li> Soumya Kanti Datta, EURECOM (FR) </li>
-					<li> Kamal Singh (University of St-Etienne, France) </li>
-					<li> Nathalie Fernandez (IRIT, Toulouse) </li>
-					<li> Victor Charpenay (Mines Saint-Etienne, France) </li>
-					<li> Antoine Zimmermann (Mines Saint-Etienne, France)</li>
-					<li> Raúl García-Castro, Universidad Politécnica de Madrid (ES) </li>
-					<li> Gil de Sousa (INRAE, France) </li>
-					<li> Lina Nachabe (University of St-Etienne, France) </li>
-					<li> Alexandre Bento (LIRIS, France) </li>
-					<li> Fatma-Zohra Hannou (Mines Saint-Etienne, France)</li>
-			        <li> Amélie Gyrard (Trialog, France) </li>
-			        <li> Nicolas Seydoux (INRUPT, France) </li>
-			        <li> Jean-Paul Calbimonte (HES-SO Valais-Wallis, Switzerland) </li>
-			         
-                     
-					</ul>
-					
-                </div>
-                
-            </div> <!-- end row -->
-        </div>
-    </section>
-	
-   <!-- <section id="section-ajenda" class="section-wrapper section-ajenda">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title">
-                        <h1>AGENDA</h1>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="session">
-                        <time>8:30AM</time>
-                        <h2>Doors Open</h2>
-                    </div>
-                    
-
-                    <div class="session">
-                        <time>9:30 - 9:40AM</time>
-                        <h2>Opening Remarks</h2>
-                        <h3>Fiona Kuhn <span>CO-FOUNDER & CEO, MES</span></h3>
-                    </div>
-                    
-
-                    <div class="session">
-                        <time>9:50 - 10:05AM</time>
-                        <h2>Focus on the story: how publishers and brands succeed on today's internet.</h2>
-                        <h3>Marie Jung <span>HEAD OF PARTNERSHIPS, MES</span></h3>
-                    </div>
-                    
-
-                    <div class="session">
-                        <time>10:10 - 10:35AM</time>
-                        <h2>Keynote Presentation</h2>
-                        <h3>Zoe Kühn <span>CO-FOUNDER & CEO,, BOOSTER</span></h3>
-                    </div>
-                    
-
-
-                </div>
-                <div class="col-md-4">
-                    <div class="session">
-                        <time>11:15 - 1:35PM</time>
-                        <h2>Brand Innovator Spotlight</h2>
-                        <h3>Tim Rams <span>DIRECTOR, CONTENT MARKETING, FIXS</span></h3>
-                        <h3>Daniel Fuchs <span>DIRECTOR OF MEDIA SERVICES, MENGO</span></h3>
-                        <h3>Hannah Keller <span>CO-FOUNDER, LOLO</span></h3>
-                    </div>
-                    .session 
-
-                    <div class="session">
-                        <time>1:35 - 2:20PM</time>
-                        <h2>Fireside Chat: Making Native Work - An Agency Perspective</h2>
-                        <h3>Fiona Kuhn <span>CO-FOUNDER & CEO, MES</span></h3>
-                    </div>
-                    .session 
-
-                    <div class="session">
-                        <time>2:20 - 3:20PM</time>
-                        <h2>Lunch Break</h2>
-                    </div>
-                     .session 
-
-
-                </div>
-                <div class="col-md-4">
-                    <div class="session">
-                        <time>3:20PM - 4PM</time>
-                        <h2>Native Creatives Winners Presentation</h2>
-                        <h3>Johann Graf <span>VP Sales, MES</span></h3>
-                    </div>
-                     .session 
-
-                    <div class="session">
-                        <time>4:05 - 5:30PM</time>
-                        <h2>Case Study: XYR</h2>
-                        <h3>Jan Pfeiffer <span>HEAD OF COMMUNICATIONS, TOT</span></h3>
-                        <h3>Marie Ilsner <span>PRESIDENT, PADDA</span></h3>
-                        <h3>Hannes Beck <span>MANAGING DIRECTOR, DEP</span></h3>
-                    </div>
-                    .session 
-
-
-                    <div class="session">
-                        <time>5:30 - 6:00PM</time>
-                        <h2>Cocktail and Networking Party</h2>
-                    </div>
-                    .session 
-
-
-                </div>
-            </div>
-        </div>
-
-    </section> -->
-
-
-    
-    <!-- .pricing-section -->
-
-
-  <!--  <section id="section-partner" class="section-wrapper client-logo">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title">
-                        <h1>PARTNERS</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                    <a href="#"><img src="img/logo-client-1.jpg" alt="Image"></a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                    <a href="#"><img src="img/logo-client-2.jpg" alt="Image"></a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                    <a href="#"><img src="img/logo-client-3.jpg" alt="Image"></a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                    <a href="#"><img src="img/logo-client-4.jpg" alt="Image"></a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                    <a href="#"><img src="img/logo-client-5.jpg" alt="Image"></a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                    <a href="#"><img src="img/logo-client-6.jpg" alt="Image"></a>
-                </div>
-            </div>
-        </div>
-        end of .container 
-    </section> -->
-    <!-- .client-logo -->
-
-
-   <!--<section id="section-venue" class="section-wrapper  gray-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title">
-                        <h1>THE VENUE</h1>
-
-                        <p>The workshop will take place at the <a href="http://kgswc.org/venu">Hotel Grand Memories Santa Maria </a>, <a href="https://en.wikipedia.org/wiki/Villa_Clara_Province">Villa Clara, Cuba </a>. </p>
-                    </div>
-			
-		 
-         
-			
-                </div>
-            </div>
-		
-        -->	
-	<!--<section id="section-flyer" class="section-wrapper  gray-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title">
-                        <h1>THE FLYER</h1>
-
-                       <figure class="thumbnail">
-                        <img src="img/flyerWorkshop.png" class="img-responsive" alt="Flyer KOGPIT Workshop">
-                    </div>
-                </div>
-            </div>
-            
-
-        </div>
-    </section> -->
-    <!-- contact-section -->
-
-	 <!-- <address>
-                        <strong>Eventas, Inc.</strong><br>
-                        1355 Market Street<br>
-                        Suite 900<br>
-                        San Francisco, CA 94103<br>
-                        <abbr title="Phone">P:</abbr> (123) 456-7890
-                    </address> -->
-
-    <footer class="footer">
-        <div class="copyright-section">
+        <section id="section-pc" class="section-wrapper about-event">
             <div class="container">
-                <div class="col-md-12">
-                    <div class="copytext text-center">&copy; Credits: Conference. All rights reserved | Design By: <a href="https://uicookies.com">uiCookies</a>. Last update: December 19th, 2022</div>
-                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>PROGRAM COMMITTEE (to be confirmed)</h2>
+                        <ul>
+                            <li> Alexandre Bento (LIRIS, France) </li>
+                            <li> Jean-Paul Calbimonte (HES-SO Valais-Wallis, Switzerland) </li>
+                            <li> Victor Charpenay (Mines Saint-Etienne, France) </li>
+                            <li> Soumya Kanti Datta (EURECOM, France) </li>
+                            <li> Gil de Sousa (INRAE, France)</li>
+                            <li> Nathalie Fernandez (IRIT, France) </li>
+                            <li> Raúl García-Castro (Universidad Politécnica de Madrid, Spain)</li>
+                            <li> Amélie Gyrard (Trialog, France) </li>
+                            <li> Fatma-Zohra Hannou (Mines Saint-Etienne, France)</li>
+                            <li> Maxime Lefrançois (Mines Saint-Etienne, France) </li>
+                            <li> Lina Nachabe (University of St-Etienne, France) </li>
+                            <li> Catherine Roussey (MISTEA Montpellier, France)</li>
+                            <li> Nicolas Seydoux (INRUPT, France) </li>
+                            <li> Kamal Singh (University of St-Etienne, France) </li>
+                            <li> Antoine Zimmermann (Mines Saint-Etienne, France)</li>
+                        </ul>
+                    </div>
+                </div> <!-- end row -->
             </div>
-            <!-- .container -->
-        </div>
-        <!-- .copyright-section -->
-    </footer>
-    <!-- .footer -->
+        </section>
 
-</div>
-<!-- #main-wrapper -->
+        <footer class="footer">
+            <div class="copyright-section">
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="copytext text-center">&copy; Credits: Conference. All rights reserved | Design By:
+                            <a href="https://uicookies.com">uiCookies</a>. Last update: December 19th, 2022
+                        </div>
+                    </div>
+                </div>
+                <!-- .container -->
+            </div>
+            <!-- .copyright-section -->
+        </footer>
+        <!-- .footer -->
+
+    </div>
+    <!-- #main-wrapper -->
 
 
-<!-- jquery -->
-<script src="js/jquery-2.1.4.min.js"></script>
+    <!-- jquery -->
+    <script src="js/jquery-2.1.4.min.js"></script>
 
-<!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
 
-<!-- Plugin JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
 
-<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-
-<!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDo7m_VCUQZ2seegUgSlg_iR5JuocRWNyQY&callback=googleMap"
-  type="text/javascript"></script> -->
-
-<!--<script src="js/one-page-nav.js"></script>-->
-<script src="js/scripts.js"></script>
+    <!--<script src="js/one-page-nav.js"></script>-->
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>

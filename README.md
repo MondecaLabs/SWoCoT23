@@ -1,5 +1,5 @@
 # SWoCoT23
-The website for the First international workshop of Semantic Web of Constrained Things (SWoCoT) at @ESWC 2023.
+The website for the First international workshop of Semantic Web of Constrained Things (SWoCoT) at [@ESWC 2023](https://2023.eswc-conferences.org/program-overview/#program-wday1).
 
 ## Call for Paper
 
